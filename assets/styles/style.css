@@ -135,11 +135,6 @@ nav {
 	box-shadow: 0px 0px 5px #c7d9d8;
 	margin: 0 20px;
 	transition: all 0.3s ease-in-out;
-
-	&:hover .btn-remove {
-		background-color: var(--accent-color);
-		color: var(--background-color);
-	}
 }
 
 .card-info {
@@ -194,8 +189,37 @@ nav {
 	width: 100%;
 }
 
+.btn-read {
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	font-weight: bolder;
+	border: none;
+	border-radius: 10px;
+	font-size: 0.9rem;
+	padding: 10px 100px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.btn-not-read {
+	background-color: var(--accent-color);
+	color: var(--background-color);
+	font-weight: bolder;
+	border: none;
+	border-radius: 10px;
+	font-size: 0.9rem;
+	padding: 10px 100px;
+	cursor: pointer;
+	width: 100%;
+}
+
 .btn-remove {
 	background-color: var(--primary-color);
+}
+
+.btn-remove:hover {
+	background-color: var(--accent-color);
+	color: var(--background-color);
 }
 
 /* form */
