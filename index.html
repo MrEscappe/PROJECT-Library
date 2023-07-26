@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Readfolio</title>
+		<link rel="stylesheet" href="assets/styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<main class="container">
+			<header>
+				<div class="brand-container">
+					<h1 class="brand">Readfolio</h1>
+				</div>
+				<nav class="btn-add-box">
+					<button class="btn-add">+</button>
+					<div class="add-text"><span>AddBook</span></div>
+				</nav>
+			</header>
+			<form action="">
+				<div class="container-form-box hidden">
+					<div class="form-box">
+						<label for="title">Title:</label>
+						<input type="text" name="title" id="title" placeholder="Title" required />
+					</div>
+					<div class="form-box">
+						<label for="author">Author:</label>
+						<input type="text" name="author" id="author" placeholder="Author" required />
+					</div>
+					<div class="form-box">
+						<label for="pages">Pages:</label>
+						<input type="number" name="pages" id="pages" placeholder="Pages" required />
+					</div>
+					<div class="form-box">
+						<label for="read">Read?</label>
+						<input type="checkbox" name="read" id="read" />
+					</div>
+					<div class="form-box">
+						<button class="btn btn-submit">Submit</button>
+					</div>
+				</div>
+			</form>
+			<article class="article-container">
+				<div class="card">
+					<div class="card-info">
+						<div class="card-title"><span class="book-title">Song of ice and fire</span></div>
+						<div class="card-subinfo">
+							<p class="card-author">
+								By
+								<span class="author-name book-author">George R. R. Martin</span>
+							</p>
+							<p class="card-pages">
+								Pages:
+								<span class="pages-number book-pages">0</span>
+							</p>
+						</div>
+					</div>
+					<div class="btn-container">
+						<button class="btn btn-read">Not Read</button>
+						<button class="btn btn-remove">Remove</button>
+					</div>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<p class="footer-text">
+				Made with ❤️ by
+				<a href="https://github.com/MrEscappe">José Sérgio</a>
+			</p>
+		</footer>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
